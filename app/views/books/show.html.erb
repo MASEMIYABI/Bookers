@@ -1,6 +1,7 @@
-<p> title</p>
-<p><%= @book.title %></p>
-<p>body</p>
-<p><%= @book.body %></p>
- <%=link_to "edit",edit_book_path%>
- <%=link_to "back",books_path%>
+<p id="notice"><%= flash[:book] %></p>
+<p id="notice"><%= flash[:books] %></p>
+<p><strong>title:</strong><%= @book.title %></p>
+<p><strong>body:</strong><%= @book.body %></p>
+ <%=link_to "Edit",edit_book_path%>
+ |
+ <%=link_to "Back",books_path%>
